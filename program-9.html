@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function get_random_color() {
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += Math.round(Math.random()) * 6;
+            }
+            document.body.style.background = color;
+        }
+    </script>
+</head>
+
+<body align="center">
+    <h1 align="center">Hai! Welcome to my page</h1>
+    <button type='button' onclick="get_random_color()">
+        <img src="welcome.jpg" alt="image" height="250px" width="350px">
+</body>
+
+</html>

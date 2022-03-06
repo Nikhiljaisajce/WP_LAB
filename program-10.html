@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <script language="javascript">
+        function preload() {
+            topon = new Image(100, 50);
+            topon.src = "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg";
+            topoff = new Image(260, 280);
+            topoff.src = "https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg";
+        }
+
+        function myMouseOn(n) {
+            preload();
+            imageON = eval(n + "on.src");
+            document.images[n].src = imageON;
+        }
+
+        function myMouseOff(n) {
+            imageOFF = eval(n + "off.src");
+            document.images[n].src = imageOFF;
+        }
+    </script>
+</head>
+
+<body>
+    <h1> Demo for mouse over</h1>
+    <a href="#" onMouseOut="myMouseOff('top')" ; onMouseOver="myMouseOn('top')" ;>
+        <img src="https://www.thoughtco.com/thmb/mik7Z00SAYN786BQbieXW
+OzZmc8=/2121x1414/filters:fill(auto,1)/lotus-flower-828457262-
+5c6334b646e0fb0001dcd75a.jpg" alt="Show Next" name="top">
+    </a>
+</body>
+
+</html>

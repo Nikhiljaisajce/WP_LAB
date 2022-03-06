@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <script language="javascript">
+        function day_title(day_name) {
+            document.write("<td align=center width=35 bgcolor = lightblue> <b> " + day_name + " </b></td> ");
+        }
+
+        function fill_table(month, month_len) {
+            day = 1
+            document.write("<table border=1 cellspacing = 3 cellpading=3%> ");
+            document.write("<tr><td colspan=7 align=center bgcolor=red> <b> " + month + " " + year + " </b></tr><tr> ");
+            day_title("sun");
+            day_title("mon");
+            day_title("tue");
+            day_title("wed");
+            day_title("thu");
+            day_title("fri");
+            day_title("sat");
+            document.write("</tr><tr>");
+            for (var i = 1; i < start_day; i++) {
+                document.write("<td>");
+            }
+            for (var i = start_day; i < 8; i++) {
+                document.write("<td align=center bgcolor=silver> " + day + " </td>");
+                day++;
+            }
+            document.write("</tr><tr>");
+            while (day <= month_len) {
+                for (var i = 1; i <= 7 && day <= month_len; i++) {
+                    document.write("<td align=center bgcolor=silver>" + day + "</td>");
+                    day++;
+                }
+                document.write("</tr><tr>");
+                start_day = i;
+            }
+            document.write("</tr></table><br>");
+        }
+        year = prompt("enter 4 digit year");
+        today = new Date("januvary1" + year);
+        start_day = today.getDay() + 1;
+        fill_table("jan", 31);
+        if (year % 4 == 0)
+            fill_table("feb", 29);
+        else
+            fill_table("feb", 28);
+        fill_table("mar", 31);
+        fill_table("apr", 30);
+        fill_table("may", 31);
+        fill_table("jun", 30);
+        fill_table("jul", 31);
+        fill_table("aug", 30);
+        fill_table("sep", 31);
+        fill_table("oct", 30);
+        fill_table("nov", 31);
+        fill_table("dec", 30);
+    </script>
+</head>
+
+</html>

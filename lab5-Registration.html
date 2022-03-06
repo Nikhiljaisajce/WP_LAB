@@ -1,0 +1,253 @@
+<html>
+
+<head>
+    <style>
+        input {
+            height: 30px;
+            border-radius: 10px;
+
+        }
+
+        input:hover {
+            box-shadow: 2px 2px 2px 2px #000000;
+        }
+
+        textarea {
+            border-radius: 10px;
+        }
+
+        textarea:hover {
+            box-shadow: 2px 2px 2px 2px #000000
+        }
+
+        select {
+            height: 30px;
+            border-radius: 10px;
+        }
+
+        select:hover {
+            box-shadow: 2px 2px 2px 2px #000000
+        }
+    </style>
+    <title>
+        REGISTRATION
+    </title>
+</head>
+
+<body
+    style="background-image:linear-gradient(to right,#96deda ,#50c9c3);font-family: 'Courier New', Courier, monospace;">
+    <div
+        style="border: 5px solid hex(#030a2b);border-radius: 20px;width: 1000px;height: auto;margin-left: 16%;background-color: #030a2b;color: seashell;padding: 8px;">
+        <h2 align="center" style="margin-top: 20px;">Registration for Certificate</h2>
+        <center><i style="color: red;">(* Required field)</i></center><br>
+        <div
+            style="border: 5px solid rgb(11, 4, 44);border-radius: 20px;width: 950px;height: auto;margin-left: 2%;background-image: linear-gradient(#13547a , #80d0c7);padding: 8px;">
+            <form action="#" style="color: #2b0853;font-size: 18px;">
+                <table cellpadding="5px">
+                    <div>
+                        <tr>
+                            <th>
+                                <label for="First Name" style="margin-left: 20px;">First Name:</label>
+                            </th>
+                            <td>
+                                <input type="text" placeholder="First Name" name="fname" required>
+                            </td>
+
+                            <th>
+                                <label for="Last Name" style="margin-left: 20px;">Last Name:</label>
+                            </th>
+                            <td>
+                                <input type="text" placeholder="Last Name" name="lname" required>
+                            </td>
+                        </tr>
+                    </div><br>
+
+                    <div>
+                        <tr>
+                            <th>
+                                <label for="address" style="vertical-align: top;margin-left: 20px;">Address
+                                    line1</label>
+                            </th>
+                            <td>
+                                <textarea name="address1" id="" cols="30" rows="4">Address line 1</textarea>
+                            </td>
+                            <th>
+                                <label for="address"
+                                    style="vertical-align: top; margin-left: 20px;margin-left: 20px;">Address
+                                    line
+                                    2</label>
+                            </th>
+                            <td>
+                                <textarea name="address2" id="" cols="30" rows="4">Address line 2</textarea>
+                            </td>
+                        </tr>
+
+                    </div>
+
+                    <div>
+                        <tr>
+                            <th><label for="Country" style="margin-left: 20px;">Country:</label>
+                            </th>
+                            <td>
+                                <input type="text" placeholder="First Name" name="country" required>
+                            </td>
+                            <th>
+                                <label for="State" style="margin-left: 20px;">State:</label>
+                            </th>
+                            <td>
+                                <input type="text" placeholder="State" name="state" required>
+                            </td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr>
+                            <th>
+                                <label for="City" style="margin-left: 20px;">City:</label>
+                            </th>
+                            <td>
+                                <input type="text" placeholder="City" name="city" required>
+                            </td>
+                            <th>
+                                <label for="pin" style="margin-left: 20px;">Pincode:</label>
+                            </th>
+                            <td>
+                                <input type="number" required>
+                            </td>
+                        </tr>
+
+                    </div>
+                    <div>
+                        <tr>
+                            <th>
+                                <label for="phno" style="margin-left: 20px;">Phone Number:</label>
+                            </th>
+                            <td>
+                                <input type="tel" required>
+                            </td>
+                            <th>
+                                <label for="email" style="margin-left: 20px;">Email:</label>
+                            </th>
+                            <td>
+                                <input type="email" required>
+                            </td>
+
+                        </tr>
+                    </div>
+
+                    <div>
+                        <tr>
+                            <th>
+                                <label for="gender" style="margin-left: 20px;">Gender:</label>&nbsp;
+                            </th>
+                            <td>
+                                <input type="radio" name="gender" value="male">
+                                <label for="female">Male</label>
+                                <input type="radio" name="gender" value="female">
+                                <label for="female">Female</label>
+                                <input type="radio" name="gender" value="others">
+                                <label for="others">Others</label>
+                            </td>
+                        </tr>
+                    </div>
+
+                    <div>
+
+                        <tr>
+                            <th>
+                                <label for="lang" style="margin-left: 40px;">Language:</label>&nbsp;
+                            </th>
+                            <td>
+                                <input type="checkbox" value="lang1">
+                                <label for="lang1">English</label>
+                                <input type="checkbox" value="lang2">
+                                <label for="lang2">Malayalm</label>
+                                <input type="checkbox" value="lang3">
+                                <label for="lang3">Hindi</label>
+                                <input type="checkbox" value="lang34">
+                                <label for="lang4">Arabic</label>
+                            </td>
+                        </tr>
+                    </div>
+
+                    <div>
+                        <tr>
+                            <th>
+                                <label for="graduation" style="margin-left: 20px;">Choose any Option:</label>
+                            </th>
+                            <td>
+                                <select name="g" id="g">
+                                    <option value="sslc"> SSLC</option>
+                                    <option value="plus_two">Plus Two</option>
+                                    <option value="ug">UG</option>
+                                    <option value="pg">PG</option>
+                                    <option value="phd">PHD</option>
+                                </select>
+                            </td>
+                            <th>
+                                <label for="mstatus" style="margin-left: 20px;">Marital Status:</label>
+                            </th>
+                            <td>
+                                <input type="radio" name="u">
+                                <label for="u">Unmarried</label>
+                                <input type="radio" name="u">
+                                <label for="u">Married</label>
+                            </td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr>
+                            <th>
+                                <label for="dob" style="margin-left: 30px;">DOB:</label>
+                            </th>
+                            <td>
+                                <input type="date" name="dob">
+                            </td>
+                        </tr>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <tr>
+                            <th>
+                                <label for="course" style="margin-left: 20px;">Name of the course:</label>
+                            </th>
+                            <td>
+                                <input type="text" name="course" required>
+                            </td>
+                            <th>
+                                <label for="mark" style="margin-left: 20px;">Percentage:</label>
+                            </th>
+                            <td>
+                                <input type="number" required>
+                            </td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr>
+                            <th>
+                                <label for="id" style="margin-left: 20px;">Course ID:</label>
+                            </th>
+                            <td>
+                                <input type="text" required>
+                            </td>
+                            <th>
+                                <label for="recipt" style="margin-left: 20px;">Recipt ID:</label>
+                            </th>
+                            <td>
+                                <input type="number" required>
+                            </td>
+                        </tr>
+                </table>
+
+
+        </div><br>
+        <div style="text-align: center;">
+            <input type="submit" value="Submit"
+                style="width:100px; height:40px;border-radius: 10px;color:#030a2b;background-color: antiquewhite;font-size: 15px;font-weight: bold;">
+            <input type="reset" value="Clear"
+                style="width:100px; height:40px;border-radius: 10px;color:#030a2b;background-color: antiquewhite;font-size: 15px;font-weight: bold;">
+        </div>
+        </form>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+div {
+  border: 5px solid rebeccapurple;
+  padding: 30px;
+  width: 600px;
+  margin-left: 500px;
+  border-radius: 20px;
+  margin-top: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+#usr {
+  width: 300px;
+  height: 2rem;
+  border-radius: 10px;
+}
